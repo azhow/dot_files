@@ -1,5 +1,7 @@
+#!/bin/bash
+
 TMUX_DIR=$(ls -la ~ | grep .tmux$)
-if test -z "$TMUX_DIR"
+if test "$TMUX_DIR"
 then
 	echo "Time for setup!"
 	# Copy config
