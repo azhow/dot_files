@@ -1,10 +1,10 @@
 TMUX_DIR=$(ls -la ~ | grep .tmux$)
-if test not -z "$TMUX_DIR"
+if test -z "$TMUX_DIR"
 then
 	echo "Time for setup!"
 	# Copy config
-	mv ~/.tmux.config ~/.tmux.config_bkp
-	cp ./.tmux.config ~/.tmux.config
+	mv ~/.tmux.conf ~/.tmux.conf_bkp
+	cp ./.tmux.conf ~/.tmux.conf
 
 	# Unzip plugins
 	set $PLUGINS_DEST_DIR=~/
