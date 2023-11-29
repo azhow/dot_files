@@ -1,16 +1,29 @@
 #!/bin/bash
 
 TMUX_DIR=$(ls -la ~ | grep .tmux$)
-if test "$TMUX_DIR"
+TMUX_CONF=~/.tmux.conf
+if [ ! -d "$TMUX_DIR" ] || [ ! -d "$TMUX_CONF" ]
 then
 	echo "Time for setup!"
-	# Copy config
-	mv ~/.tmux.conf ~/.tmux.conf_bkp
-	cp ./.tmux.conf ~/.tmux.conf
+
+	if test -d "$TMUX_CONF"
+	then
+		mv $TMUX_CONF ~/.tmux.conf.bkp
+	fi
+
+	ln -s "$(pwd)/.tmux.conf" $TMUX_CONF
+
+	if test -d "~/.tmux"
+	then
+		mv "~/.tmux" "~/.tmux_bkp"
+	fi
 
 	# Unzip plugins
 	set $PLUGINS_DEST_DIR=~/
-	tar -xf ./plugins.tar.gz $PLUGINS_DEST_DIR
+	tar -xf ./plugins.tar.gz
+	ln -s "$(pwd)/.tmux" "$PLUGINS_DEST_DIR"
+
+	echo "All done!"
 else
 	echo "Y'all good to go!"
 fi
