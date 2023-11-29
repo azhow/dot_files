@@ -19,7 +19,7 @@ then
 	fi
 
 	# Unzip plugins
-	$PLUGINS_DEST_DIR=~/
+	PLUGINS_DEST_DIR=~/
 	tar -xf ./plugins.tar.gz
 	ln -s "$(pwd)/.tmux" "$PLUGINS_DEST_DIR"
 
