@@ -1,0 +1,13 @@
+#!/bin/bash
+
+KITTY_DIR=~/.config/kitty
+KITTY_CONF=~/.config/kitty/kitty.conf
+
+echo "Time for setup!"
+
+mkdir -p $KITTY_DIR
+
+ln -s "$(pwd)/kitty.conf" $KITTY_CONF
+ln -s "$(pwd)/wpp.png" $KITTY_DIR
+
+echo "All done!"
