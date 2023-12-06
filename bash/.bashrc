@@ -123,3 +123,5 @@ if test -z "$TMUX_PID"; then
 else
     echo "Spawned from TMUX"
 fi
+
+~/Projects/FaustaoSay/generator.py | ~/Projects/FaustaoSay/faustaosay.py
