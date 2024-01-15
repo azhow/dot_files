@@ -43,12 +43,12 @@
       "KC_DOT",
       "KC_SLSH",
       "KC_ESC",
-      "KC_LGUI",
+      "KC_LALT",
       "MO(1)",
       "KC_SPC",
       "KC_ENT",
       "MO(2)",
-      "KC_RALT"
+      "KC_LGUI"
     ],
     [
       "KC_NO",
@@ -87,12 +87,12 @@
       "KC_NO",
       "KC_NO",
       "KC_PSCR",
-      "KC_LGUI",
+      "KC_LALT",
       "KC_TRNS",
       "KC_SPC",
       "KC_ENT",
       "MO(3)",
-      "KC_RALT"
+      "KC_LGUI"
     ],
     [
       "KC_TAB",
@@ -131,18 +131,18 @@
       "KC_RCBR",
       "KC_PIPE",
       "KC_TILD",
-      "KC_LGUI",
+      "KC_LALT",
       "MO(3)",
       "KC_SPC",
       "KC_ENT",
       "KC_TRNS",
-      "KC_RALT"
+      "KC_LGUI"
     ],
     [
-      "QK_BOOT",
       "KC_NO",
       "KC_BTN1",
       "KC_BTN2",
+      "KC_BTN3",
       "KC_MPLY",
       "KC_MUTE",
       "KC_NO",
@@ -150,9 +150,9 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
+      "QK_BOOT",
       "KC_NO",
-      "RGB_TOG",
-      "RGB_HUI",
+      "KC_NO",
       "RGB_SAI",
       "RGB_VAI",
       "KC_VOLU",
@@ -161,10 +161,10 @@
       "KC_MS_D",
       "KC_MS_U",
       "KC_MS_R",
+      "RGB_HUI",
+      "RGB_TOG",
       "KC_NO",
       "KC_NO",
-      "RGB_MOD",
-      "RGB_HUD",
       "RGB_SAD",
       "RGB_VAD",
       "KC_VOLD",
@@ -173,14 +173,14 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
-      "KC_NO",
-      "KC_LGUI",
+      "RGB_HUD",
+      "RGB_MOD",
+      "KC_LALT",
       "KC_TRNS",
       "KC_SPC",
       "KC_ENT",
       "KC_TRNS",
-      "KC_RALT"
+      "KC_LGUI"
     ]
   ],
   "author": "Anonymous"
