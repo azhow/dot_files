@@ -86,6 +86,9 @@ output * bg /usr/share/backgrounds/default.jxl fill
     # Lockscreen
     bindsym $mod+Shift+b exec swaylock
 
+    # Print screen
+    #bindsym Print exec grim -g "$(slurp -d)" - | wl-copy -t image/png
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -241,5 +244,9 @@ input "type:touchpad" {
 # Auto start stuff
 exec $term
 exec firefox
+
+# Looks configuratio
+# Hides window title bar and bordersn
+default_border none
 
 include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
