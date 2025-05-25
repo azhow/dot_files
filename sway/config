@@ -72,7 +72,7 @@ output * bg /usr/share/backgrounds/default.jxl fill
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec ~/bin/focus_or_launch_terminal.sh
+    bindsym $mod+Return exec ~/.config/sway/focus_or_launch_terminal.sh
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -244,6 +244,7 @@ input "type:touchpad" {
 # Auto start stuff
 exec $term
 exec firefox
+exec obsidian
 
 # Looks configuratio
 # Hides window title bar and bordersn
