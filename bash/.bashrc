@@ -128,6 +128,10 @@ export VITASDK=/usr/local/vitasdk
 export PATH=$VITASDK/bin:$PATH
 export PATH=$PATH:~/bin/nvim-linux64/bin:~/.local/bin:~/bin/mdcat-2.1.0-x86_64-unknown-linux-musl:~/.cargo/bin:~/bin
 export PATH=~/bin:$PATH
+export TERMINFO=$HOME/.terminfo
+
+export TERM=ghostty
+export EDITOR=nvim
 
 eval "$(oh-my-posh init bash --config /home/lain/.cache/oh-my-posh/themes/hul10.omp.json)"
 
