@@ -87,6 +87,9 @@ output * bg /usr/share/backgrounds/default.jxl fill
     bindsym $mod+Shift+b exec swaylock
 
     # Print screen
+    bindsym $mod+Shift+s exec flameshot gui
+
+    # Print screen
     #bindsym Print exec grim -g "$(slurp -d)" - | wl-copy -t image/png
 
     # Drag floating windows by holding down $mod and left mouse button.
