@@ -43,3 +43,4 @@
 # resize-overlay-duration = 4s 200ms
 title="Terminal"
 theme = catppuccin-frappe
+shell-integration = fish

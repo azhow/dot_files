@@ -15,7 +15,7 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 # Recommends: foot
-set $term ghostty
+set $term /home/lain/bin/ghostty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -87,7 +87,7 @@ output * bg /usr/share/backgrounds/default.jxl fill
     bindsym $mod+Shift+b exec swaylock
 
     # Print screen
-    bindsym $mod+Shift+s exec flameshot gui
+    bindsym $mod+Shift+s exec grim -g "$(slurp -d)" - | wl-copy -t image/png
 
     # Print screen
     #bindsym Print exec grim -g "$(slurp -d)" - | wl-copy -t image/png
